@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var currentUser = PFUser.currentUser();
+        let currentUser = PFUser.currentUser();
 
         
         if currentUser != nil {
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
             PFUser.currentUser()?["firstTime"] = false;
             PFUser.currentUser()?["email"] = textField.text;
             do {
-                try PFUser.currentUser()?.pin();
+                try PFUser.currentUser()?.pinInBackground();
             } catch {
                 print("Error")
             }
@@ -111,7 +111,7 @@ class ViewController: UIViewController {
             print("Text field: \(textField.text)");
             PFUser.currentUser()?["name"] = textField.text;
             do {
-                try PFUser.currentUser()?.pin();
+                try PFUser.currentUser()?.pinInBackground();
             } catch {
                 print("Error")
             }

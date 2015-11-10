@@ -13,9 +13,9 @@ class NewGroupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Super lololol");
+        //print("Super lololol");
         //I need to override the back button in the next view and then do this so that they don't save stuff on accident!
-        self.navigationController?.popToViewController(self.navigationController!.viewControllers[1], animated: true);
+        //self.navigationController?.popToViewController(self.navigationController!.viewControllers[1], animated: true);
         
 
 
