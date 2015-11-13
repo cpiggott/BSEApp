@@ -1,0 +1,6 @@
+framework module Pods_BSETests {
+  umbrella header "Pods-BSETests-umbrella.h"
+
+  export *
+  module * { export * }
+}
