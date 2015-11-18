@@ -10,6 +10,9 @@
 		5BAB3215AB79E868681C0DB4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D390A92937EE2EC8FC9D85F /* Pods.framework */; };
 		AD0621AC1BF54CE800D548B0 /* BullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621AB1BF54CE800D548B0 /* BullTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD0621AE1BF54F9600D548B0 /* BullTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621AD1BF54F9600D548B0 /* BullTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0621B11BF5C13D00D548B0 /* BullInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B01BF5C13D00D548B0 /* BullInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0621B41BF5C1BD00D548B0 /* SingleBullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B31BF5C1BD00D548B0 /* SingleBullTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0621B61BFC5CC400D548B0 /* BullMatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B51BFC5CC400D548B0 /* BullMatingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD3ADA241BF292A300BB40AC /* KMPlaceholderTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3ADA231BF292A300BB40AC /* KMPlaceholderTextView.framework */; };
 		AD3ADA261BF3C7BF00BB40AC /* ExistingGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3ADA251BF3C7BF00BB40AC /* ExistingGroupViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ADCF2F581BF168C50083F1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF2F571BF168C50083F1A0 /* AppDelegate.swift */; };
@@ -61,6 +64,9 @@
 		7D390A92937EE2EC8FC9D85F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0621AB1BF54CE800D548B0 /* BullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullTableViewController.swift; sourceTree = "<group>"; };
 		AD0621AD1BF54F9600D548B0 /* BullTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullTableViewCell.swift; sourceTree = "<group>"; };
+		AD0621B01BF5C13D00D548B0 /* BullInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullInfoViewController.swift; sourceTree = "<group>"; };
+		AD0621B31BF5C1BD00D548B0 /* SingleBullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleBullTableViewController.swift; sourceTree = "<group>"; };
+		AD0621B51BFC5CC400D548B0 /* BullMatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullMatingViewController.swift; sourceTree = "<group>"; };
 		AD3ADA231BF292A300BB40AC /* KMPlaceholderTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMPlaceholderTextView.framework; path = "Pods/../build/Debug-iphoneos/KMPlaceholderTextView.framework"; sourceTree = "<group>"; };
 		AD3ADA251BF3C7BF00BB40AC /* ExistingGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingGroupViewController.swift; sourceTree = "<group>"; };
 		ADCF2F541BF168C50083F1A0 /* BSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,8 +154,20 @@
 		AD0621AF1BF5C07800D548B0 /* ViewControllersFields */ = {
 			isa = PBXGroup;
 			children = (
+				AD0621B01BF5C13D00D548B0 /* BullInfoViewController.swift */,
+				AD0621B51BFC5CC400D548B0 /* BullMatingViewController.swift */,
 			);
 			name = ViewControllersFields;
+			sourceTree = "<group>";
+		};
+		AD0621B21BF5C16900D548B0 /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD0621AB1BF54CE800D548B0 /* BullTableViewController.swift */,
+				ADCF2F851BF16C2E0083F1A0 /* GroupsTableViewTableViewController.swift */,
+				AD0621B31BF5C1BD00D548B0 /* SingleBullTableViewController.swift */,
+			);
+			name = "Table Views";
 			sourceTree = "<group>";
 		};
 		ADCF2F4B1BF168C50083F1A0 = {
@@ -177,6 +195,7 @@
 		ADCF2F561BF168C50083F1A0 /* BSE */ = {
 			isa = PBXGroup;
 			children = (
+				AD0621B21BF5C16900D548B0 /* Table Views */,
 				AD0621AF1BF5C07800D548B0 /* ViewControllersFields */,
 				ADCF2F571BF168C50083F1A0 /* AppDelegate.swift */,
 				ADCF2F591BF168C50083F1A0 /* ViewController.swift */,
@@ -184,11 +203,9 @@
 				ADCF2F5E1BF168C50083F1A0 /* Assets.xcassets */,
 				ADCF2F601BF168C50083F1A0 /* LaunchScreen.storyboard */,
 				ADCF2F631BF168C50083F1A0 /* Info.plist */,
-				ADCF2F851BF16C2E0083F1A0 /* GroupsTableViewTableViewController.swift */,
 				ADCF2F891BF16F010083F1A0 /* ExistingGroupTableViewCell.swift */,
 				ADCF2F8B1BF175BA0083F1A0 /* NewGroupViewController.swift */,
 				AD3ADA251BF3C7BF00BB40AC /* ExistingGroupViewController.swift */,
-				AD0621AB1BF54CE800D548B0 /* BullTableViewController.swift */,
 				AD0621AD1BF54F9600D548B0 /* BullTableViewCell.swift */,
 			);
 			path = BSE;
@@ -423,10 +440,13 @@
 				AD0621AC1BF54CE800D548B0 /* BullTableViewController.swift in Sources */,
 				ADCF2F861BF16C2E0083F1A0 /* GroupsTableViewTableViewController.swift in Sources */,
 				ADCF2F5A1BF168C50083F1A0 /* ViewController.swift in Sources */,
+				AD0621B41BF5C1BD00D548B0 /* SingleBullTableViewController.swift in Sources */,
 				AD0621AE1BF54F9600D548B0 /* BullTableViewCell.swift in Sources */,
 				ADCF2F8A1BF16F010083F1A0 /* ExistingGroupTableViewCell.swift in Sources */,
 				ADCF2F581BF168C50083F1A0 /* AppDelegate.swift in Sources */,
+				AD0621B61BFC5CC400D548B0 /* BullMatingViewController.swift in Sources */,
 				AD3ADA261BF3C7BF00BB40AC /* ExistingGroupViewController.swift in Sources */,
+				AD0621B11BF5C13D00D548B0 /* BullInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,12 +589,14 @@
 			baseConfigurationReference = 3C13525B0DD9EF0B32A40006 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = BSE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.null-development.BSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,12 +608,14 @@
 			baseConfigurationReference = 1458D9B89EBC1EF15434759C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = BSE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.null-development.BSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";

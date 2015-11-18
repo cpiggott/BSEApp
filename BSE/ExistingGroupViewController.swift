@@ -16,10 +16,21 @@ class ExistingGroupViewController: UIViewController {
 
     @IBOutlet var ranchName: UILabel!
     
+    @IBOutlet var dateCollected: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ranchName.text = group["ranchName"] as? String;
+        
+        let myDateFormatter = NSDateFormatter();
+        
+        myDateFormatter.dateFormat = "yyyy-MM-dd HH:mm";
+        
+        let date = self.group["madeAt"] as! NSDate!;
+        
+        
+        dateCollected.text = myDateFormatter.stringFromDate(date);
+        
 
         // Do any additional setup after loading the view.
     }

@@ -23,7 +23,7 @@ class NewGroupViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var phone: UITextField!
     
     
-    
+    var group: PFObject!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +61,14 @@ class NewGroupViewController: UIViewController, UITextFieldDelegate {
         ranchInfo["phone"] = phone.text;
         ranchInfo["madeAt"] = NSDate();
         
+        ranchInfo.pinInBackgroundWithBlock({(success: Bool, error: NSError?) -> Void in
+            
+            self.group = ranchInfo;
+            self.performSegueWithIdentifier("newGroupSegue", sender: nil);
+            
+            
+        });
+        
         ranchInfo.pinInBackground();
         print("Saved Ranch Name")
     }
@@ -81,6 +89,12 @@ class NewGroupViewController: UIViewController, UITextFieldDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if(segue.identifier == "newGroupSegue"){
+            let bullTableVC = segue.destinationViewController as! BullTableViewController;
+            
+            bullTableVC.group = self.group;
+        }
+        
         
         
     }

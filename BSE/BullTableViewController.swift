@@ -14,6 +14,7 @@ class BullTableViewController: UITableViewController {
 
     
     var bullArray = [PFObject]();
+    var bullGlobal : PFObject!;
     
     var group : PFObject!;
     
@@ -120,11 +121,21 @@ class BullTableViewController: UITableViewController {
         let bull = PFObject(className:"Bull")
         bull["bullID"] = bullID;
         bull["group"] = self.group;
-        bull.pinInBackground();
         
-        self.performSegueWithIdentifier("viewBullTableView", sender: nil);
+        bull.pinInBackgroundWithBlock({(success: Bool, error: NSError?) -> Void in
+            
+            self.bullGlobal = bull;
+            self.performSegueWithIdentifier("viewBullTVManual", sender: nil);
+
+            
+        });
+        
+        
+        
 
     }
+    
+    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -133,6 +144,9 @@ class BullTableViewController: UITableViewController {
         
         query.fromLocalDatastore();
         query.orderByAscending("bullID");
+        query.whereKey("group", equalTo: self.group);
+
+        
         
         query.findObjectsInBackgroundWithBlock { (bulls: [PFObject]?, error: NSError?) -> Void in
             
@@ -186,14 +200,24 @@ class BullTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "viewBullTableView"){
+            let singleBullVC = segue.destinationViewController as! SingleBullTableViewController;
+            
+            singleBullVC.bull = self.bullArray[ self.tableView!.indexPathForSelectedRow!.row - 1];
+            singleBullVC.group = self.group;
+        }
+        else if (segue.identifier == "viewBullTVManual"){
+            let singleBullVC = segue.destinationViewController as! SingleBullTableViewController;
+            
+            singleBullVC.bull = self.bullGlobal;
+            singleBullVC.group = self.group;
+        }
     }
-    */
+
 
 }
