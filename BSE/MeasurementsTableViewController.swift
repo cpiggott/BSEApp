@@ -1,8 +1,8 @@
 //
-//  SingleBullTableViewController.swift
+//  MeasurementsTableViewController.swift
 //  BSE
 //
-//  Created by Chris Piggott on 11/13/15.
+//  Created by Chris Piggott on 11/19/15.
 //  Copyright © 2015 Null Development. All rights reserved.
 //
 
@@ -10,26 +10,38 @@ import UIKit
 
 import Parse
 
-class SingleBullTableViewController: UITableViewController {
+class MeasurementsTableViewController: UITableViewController {
     
-    var bull: PFObject!;
-    var group : PFObject!;
     
+    var bull : PFObject!;
+    
+    @IBOutlet var scrotalCircumference: UITextField!
+    @IBOutlet var bodyCondition: UITextField!
+    @IBOutlet var pelvicX: UITextField!
+    @IBOutlet var pelvicY: UITextField!
+    @IBOutlet var frameScore: UITextField!
+    @IBOutlet var hipHeight: UITextField!
+    @IBOutlet var otherMeasurement: UITextField!
+    @IBOutlet var otherMeasurementUnits: UITextField!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "Bull ID: " + (bull["bullID"] as! String);
-        bull["examDate"] = NSDate();
-        bull.pinInBackground();
-        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        scrotalCircumference.text = bull["scrotalCircumference"] as? String;
+        bodyCondition.text = bull["bodyCondition"] as? String;
+        pelvicX.text = bull["pelvicXMeasurement"] as? String;
+        pelvicY.text = bull["pelvicYMeasurement"] as? String;
+        frameScore.text = bull["frameScore"] as? String;
+        hipHeight.text = bull["hipHeight"] as? String;
+        otherMeasurement.text = bull["otherMeasurementPhysical"] as? String;
+        otherMeasurementUnits.text = bull["otherMeasurementUnitsPhysical"] as? String;
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,14 +51,42 @@ class SingleBullTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 6
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        if(scrotalCircumference.text != nil){
+            bull["scrotalCircumference"] = scrotalCircumference.text;
+        }
+        
+        if(bodyCondition.text != nil) {
+            bull["bodyCondition"] = bodyCondition.text;
+        }
+        
+        if(pelvicX.text != nil){
+            bull["pelvicXMeasurement"] = pelvicX.text;
+        }
+        
+        if(pelvicY.text != nil){
+            bull["pelvicYMeasurement"] = pelvicY.text;
+        }
+        
+        if(frameScore.text != nil){
+            bull["frameScore"] = frameScore.text;
+        }
+        
+        if(hipHeight.text != nil){
+            bull["hipHeight"] = hipHeight.text;
+        }
+        
+        if(otherMeasurement.text != nil){
+            bull["otherMeasurementPhysical"] = otherMeasurement.text;
+        }
+        
+        if(otherMeasurementUnits.text != nil){
+            bull["otherMeasurementUnitsPhysical"] = otherMeasurementUnits.text;
+        }
+        
+        bull.pinInBackground();
     }
 
     /*
@@ -94,36 +134,14 @@ class SingleBullTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if(segue.identifier == "viewBullInfoTableView"){
-            let bullInfoVC = segue.destinationViewController as! BullInfoViewController;
-            
-            bullInfoVC.bull = self.bull;
-            bullInfoVC.group = self.group;
-        }
-        else if (segue.identifier == "viewSexDrive") {
-            let bullSexDrive = segue.destinationViewController as! BullMatingViewController;
-            
-            bullSexDrive.bull = self.bull;
-        }
-        else if (segue.identifier == "viewPhysicalParameters")
-        {
-            let bullPhysical = segue.destinationViewController as! PhysicalSingleViewController;
-            
-            bullPhysical.bull = self.bull;
-        }
-        
-        else if (segue.identifier == "viewClassification") {
-            let bullClassification = segue.destinationViewController as! ClassificationViewController;
-            
-            bullClassification.bull = self.bull;
-        }
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
-    
+    */
 
 }

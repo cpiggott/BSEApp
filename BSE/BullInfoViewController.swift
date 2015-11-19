@@ -48,7 +48,7 @@ class BullInfoViewController: UIViewController {
             else if (bullIdString == "RFID") {
                 tagTypePicker.selectedSegmentIndex = 2;
             }
-            else {
+            else if (bullIdString == "Brand"){
                 tagTypePicker.selectedSegmentIndex = 3;
             }
         }

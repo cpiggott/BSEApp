@@ -13,6 +13,9 @@
 		AD0621B11BF5C13D00D548B0 /* BullInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B01BF5C13D00D548B0 /* BullInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD0621B41BF5C1BD00D548B0 /* SingleBullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B31BF5C1BD00D548B0 /* SingleBullTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD0621B61BFC5CC400D548B0 /* BullMatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B51BFC5CC400D548B0 /* BullMatingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0621B81BFE55DC00D548B0 /* PhysicalSingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B71BFE55DC00D548B0 /* PhysicalSingleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0621BA1BFE60BB00D548B0 /* MeasurementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B91BFE60BB00D548B0 /* MeasurementsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0621BC1BFE746A00D548B0 /* ClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621BB1BFE746A00D548B0 /* ClassificationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD3ADA241BF292A300BB40AC /* KMPlaceholderTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3ADA231BF292A300BB40AC /* KMPlaceholderTextView.framework */; };
 		AD3ADA261BF3C7BF00BB40AC /* ExistingGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3ADA251BF3C7BF00BB40AC /* ExistingGroupViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ADCF2F581BF168C50083F1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF2F571BF168C50083F1A0 /* AppDelegate.swift */; };
@@ -67,6 +70,9 @@
 		AD0621B01BF5C13D00D548B0 /* BullInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullInfoViewController.swift; sourceTree = "<group>"; };
 		AD0621B31BF5C1BD00D548B0 /* SingleBullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleBullTableViewController.swift; sourceTree = "<group>"; };
 		AD0621B51BFC5CC400D548B0 /* BullMatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullMatingViewController.swift; sourceTree = "<group>"; };
+		AD0621B71BFE55DC00D548B0 /* PhysicalSingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalSingleViewController.swift; sourceTree = "<group>"; };
+		AD0621B91BFE60BB00D548B0 /* MeasurementsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementsTableViewController.swift; sourceTree = "<group>"; };
+		AD0621BB1BFE746A00D548B0 /* ClassificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationViewController.swift; sourceTree = "<group>"; };
 		AD3ADA231BF292A300BB40AC /* KMPlaceholderTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMPlaceholderTextView.framework; path = "Pods/../build/Debug-iphoneos/KMPlaceholderTextView.framework"; sourceTree = "<group>"; };
 		AD3ADA251BF3C7BF00BB40AC /* ExistingGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingGroupViewController.swift; sourceTree = "<group>"; };
 		ADCF2F541BF168C50083F1A0 /* BSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +172,9 @@
 				AD0621AB1BF54CE800D548B0 /* BullTableViewController.swift */,
 				ADCF2F851BF16C2E0083F1A0 /* GroupsTableViewTableViewController.swift */,
 				AD0621B31BF5C1BD00D548B0 /* SingleBullTableViewController.swift */,
+				AD0621B71BFE55DC00D548B0 /* PhysicalSingleViewController.swift */,
+				AD0621B91BFE60BB00D548B0 /* MeasurementsTableViewController.swift */,
+				AD0621BB1BFE746A00D548B0 /* ClassificationViewController.swift */,
 			);
 			name = "Table Views";
 			sourceTree = "<group>";
@@ -438,7 +447,9 @@
 			files = (
 				ADCF2F8C1BF175BA0083F1A0 /* NewGroupViewController.swift in Sources */,
 				AD0621AC1BF54CE800D548B0 /* BullTableViewController.swift in Sources */,
+				AD0621BC1BFE746A00D548B0 /* ClassificationViewController.swift in Sources */,
 				ADCF2F861BF16C2E0083F1A0 /* GroupsTableViewTableViewController.swift in Sources */,
+				AD0621BA1BFE60BB00D548B0 /* MeasurementsTableViewController.swift in Sources */,
 				ADCF2F5A1BF168C50083F1A0 /* ViewController.swift in Sources */,
 				AD0621B41BF5C1BD00D548B0 /* SingleBullTableViewController.swift in Sources */,
 				AD0621AE1BF54F9600D548B0 /* BullTableViewCell.swift in Sources */,
@@ -447,6 +458,7 @@
 				AD0621B61BFC5CC400D548B0 /* BullMatingViewController.swift in Sources */,
 				AD3ADA261BF3C7BF00BB40AC /* ExistingGroupViewController.swift in Sources */,
 				AD0621B11BF5C13D00D548B0 /* BullInfoViewController.swift in Sources */,
+				AD0621B81BFE55DC00D548B0 /* PhysicalSingleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
