@@ -306,10 +306,10 @@
                     </tableView>
                     <connections>
                         <outlet property="m1" destination="cuR-dG-siw" id="sB2-20-Fqs"/>
-                        <outlet property="m2" destination="oNJ-Rr-WlB" id="GU5-ge-4GI"/>
+                        <outlet property="m2" destination="WRY-XS-JWD" id="Suq-3p-wRK"/>
                         <outlet property="m3" destination="oNJ-Rr-WlB" id="lRE-YY-wC4"/>
                         <outlet property="m4" destination="mR1-Y5-VQL" id="kBs-WD-t1e"/>
-                        <outlet property="m5" destination="2x6-mp-bka" id="0RM-YK-aj7"/>
+                        <outlet property="m5" destination="Jpn-7l-PnR" id="n7b-1z-t1w"/>
                         <outlet property="m6" destination="2x6-mp-bka" id="X63-ku-GLk"/>
                         <outlet property="m7" destination="iAP-w3-DI4" id="tig-rD-JUe"/>
                         <outlet property="m8" destination="fdS-KI-ySA" id="o5j-4p-8Ea"/>

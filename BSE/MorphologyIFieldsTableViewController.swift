@@ -30,6 +30,14 @@ class MorphologyIFieldsTableViewController: UITableViewController {
 
         user = PFUser.currentUser();
         
+        m1.text = user["m1"] as? String;
+        m2.text = user["m2"] as? String;
+        m3.text = user["m3"] as? String;
+        m4.text = user["m4"] as? String;
+        m5.text = user["m5"] as? String;
+        m6.text = user["m6"] as? String;
+        m7.text = user["m7"] as? String;
+        m8.text = user["m8"] as? String;
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
