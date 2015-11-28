@@ -37,13 +37,15 @@ class PhysicalSingleViewController: UIViewController {
         
         if(segue.identifier == "viewMeasurements")
         {
-            print("Hi from segue")
             let bullMeasurementsSegue = segue.destinationViewController as! MeasurementsTableViewController;
             
             bullMeasurementsSegue.bull = self.bull;
         }
         else if (segue.identifier == "viewPhysicalExam"){
             //navigate to physical exam
+            let bullPhysical = segue.destinationViewController as! PhysicalExamTableViewController;
+            
+            bullPhysical.bull = self.bull;
         }
         
         

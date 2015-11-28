@@ -8,34 +8,136 @@
 
 import UIKit
 
+import Parse
+
 class PhysicalExamTableViewController: UITableViewController {
+    
+    var bull : PFObject!;
+    
+    @IBOutlet var eyeDescription: UITextField!
+    @IBOutlet var feetDescription: UITextField!
+    @IBOutlet var legsDescription: UITextField!
+    @IBOutlet var testiclesDescription: UITextField!
+    @IBOutlet var accesoryDescription: UITextField!
+    @IBOutlet var inguinalDescription: UITextField!
+    @IBOutlet var scrotalDescription: UITextField!
+    @IBOutlet var epidydimidesDescription: UITextField!
+    @IBOutlet var penisDescription: UITextField!
+    @IBOutlet var prepuceDescription: UITextField!
+    @IBOutlet var scrotumDescription: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        eyeDescription.text = bull["eyeDescription"] as? String;
+        feetDescription.text = bull["feetDescription"] as? String;
+        legsDescription.text = bull["legsDescription"] as? String;
+        testiclesDescription.text =  bull["testiclesDescription"] as? String;
+        accesoryDescription.text = bull["accesoryDescription"] as? String;
+        inguinalDescription.text = bull["inguinalDescription"] as? String;
+        scrotalDescription.text = bull["scrotalDescription"] as? String;
+        epidydimidesDescription.text = bull["epidydimidesDescription"] as? String;
+        penisDescription.text = bull["penisDescription"] as? String;
+        prepuceDescription.text = bull["prepuceDescription"] as? String;
+        scrotumDescription.text = bull["scrotumDescription"] as? String;
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        
+        if(eyeDescription.text != nil){
+            bull["eyeDescription"] = eyeDescription.text;
+            bull["eyesNormal"] = false;
+        } else {
+            bull["eyesNormal"] = true;
+        }
+        
+        if(feetDescription.text != nil){
+            bull["feetDescription"] = feetDescription.text;
+            bull["feetNormal"] = false;
+        } else {
+            bull["feetNormal"] = true;
+        }
+        
+        if(legsDescription.text != nil){
+            bull["legsDescription"] = legsDescription.text;
+            bull["legsNormal"] = false;
+        } else {
+            bull["legsNormal"] = true;
+        }
+        
+        if(testiclesDescription.text != nil){
+            bull["testiclesDescription"] = testiclesDescription.text;
+            bull["testiclesNormal"] = false;
+        } else {
+            bull["testiclesNormal"] = true;
+        }
+        
+        if(accesoryDescription.text != nil){
+            bull["accesoryDescription"] = accesoryDescription.text;
+            bull["accesoryNormal"] = false;
+        } else {
+            bull["accesoryNormal"] = true;
+        }
+        
+        if(inguinalDescription.text != nil){
+            bull["inguinalDescription"] = inguinalDescription.text;
+            bull["inguinalNormal"] = false;
+        } else {
+            bull["inguinalsNormal"] = true;
+        }
+        
+        if(scrotalDescription.text != nil){
+            bull["scrotalDescription"] = scrotalDescription.text;
+            bull["scrotalNormal"] = false;
+        } else {
+            bull["scrotalNormal"] = true;
+        }
+        
+        if(epidydimidesDescription.text != nil){
+            bull["epidydimidesDescription"] = epidydimidesDescription.text;
+            bull["epidydimidesNormal"] = false;
+        } else {
+            bull["epidydimidesNormal"] = true;
+        }
+        
+        if(penisDescription.text != nil){
+            bull["penisDescription"] = penisDescription.text;
+            bull["penisNormal"] = false;
+        } else {
+            bull["penisNormal"] = true;
+        }
+        
+        if(prepuceDescription.text != nil){
+            bull["prepuceDescription"] = prepuceDescription.text;
+            bull["prepuceNormal"] = false;
+        } else {
+            bull["prepuceNormal"] = true;
+        }
+        
+        if(scrotumDescription.text != nil){
+            bull["scrotumDescription"] = scrotumDescription.text;
+            bull["scrotumNormal"] = false;
+        } else {
+            bull["scrotumNormal"] = true;
+        }
+        
+        bull.pinInBackground();
+        
+        
+        
+    }
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+    
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
