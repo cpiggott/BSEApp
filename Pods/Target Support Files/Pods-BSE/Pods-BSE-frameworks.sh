@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-BSE/KMPlaceholderTextView.framework"
+  install_framework "Pods-BSE/JVFloatLabeledTextField.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-BSE/KMPlaceholderTextView.framework"
+  install_framework "Pods-BSE/JVFloatLabeledTextField.framework"
 fi

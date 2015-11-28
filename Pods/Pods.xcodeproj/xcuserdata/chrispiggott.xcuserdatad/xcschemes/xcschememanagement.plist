@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>KMPlaceholderTextView.xcscheme</key>
+		<key>JVFloatLabeledTextField.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -14,45 +14,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BSETests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-BSEUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>83D83B9D9713876EAD1A0E97C19C313E</key>
+		<key>6250BACC23C011CEB8F0C39156518B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A06387DDC619718DA888766D18BAED56</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A09FE1145B4BDEDD52CBADF732F3B8AB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C8CE4451636DA9E40D0E9F22598A85BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EC25B770E2E786F47106EE8F013163EA</key>
+		<key>735882DA95E7FCCEC084FC1C5384FF8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

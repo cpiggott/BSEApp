@@ -1,10 +1,10 @@
 PODS:
-  - KMPlaceholderTextView (1.0.0)
+  - JVFloatLabeledTextField (1.1.0)
 
 DEPENDENCIES:
-  - KMPlaceholderTextView (~> 1.0.0)
+  - JVFloatLabeledTextField
 
 SPEC CHECKSUMS:
-  KMPlaceholderTextView: 08514547996d3bc7ce1b57e296af2ce8e832c0f6
+  JVFloatLabeledTextField: ea4a3d8387ddd43724c472bb2b8ab39b79af05d4
 
 COCOAPODS: 0.39.0

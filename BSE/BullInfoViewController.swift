@@ -10,6 +10,8 @@ import UIKit
 
 import Parse
 
+
+
 class BullInfoViewController: UIViewController {
     
     var bull : PFObject!;
@@ -21,6 +23,7 @@ class BullInfoViewController: UIViewController {
     @IBOutlet var lotField: UITextField!
     @IBOutlet var dobDateLabel: UIDatePicker!
     @IBOutlet var tagTypePicker: UISegmentedControl!
+    @IBOutlet var infoComments: UITextField!
     
     
     override func viewDidLoad() {
@@ -31,6 +34,7 @@ class BullInfoViewController: UIViewController {
         bullIDField.text = bull["bullID"] as? String;
         lotField.text = bull["lot"] as? String;
         bullBreedField.text = bull["breed"] as? String;
+        infoComments.text = bull["infoComments"] as? String;
         
         if (bull["dobDate"] != nil){
             dobDateLabel.date = bull["dobDate"] as! NSDate;
@@ -73,6 +77,10 @@ class BullInfoViewController: UIViewController {
         
         if(bullBreedField.text != nil){
             bull["breed"] = bullBreedField.text;
+        }
+        
+        if(infoComments.text != nil){
+            bull["infoComments"] = infoComments.text;
         }
         
         bull.pinInBackground();

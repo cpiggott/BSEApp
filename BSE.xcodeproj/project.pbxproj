@@ -16,6 +16,8 @@
 		AD0621B81BFE55DC00D548B0 /* PhysicalSingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B71BFE55DC00D548B0 /* PhysicalSingleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD0621BA1BFE60BB00D548B0 /* MeasurementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621B91BFE60BB00D548B0 /* MeasurementsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD0621BC1BFE746A00D548B0 /* ClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621BB1BFE746A00D548B0 /* ClassificationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0621BE1BFE88F200D548B0 /* SemenCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0621BD1BFE88F200D548B0 /* SemenCounterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD22521B1C093FD30003D64D /* PhysicalExamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22521A1C093FD30003D64D /* PhysicalExamTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD3ADA241BF292A300BB40AC /* KMPlaceholderTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3ADA231BF292A300BB40AC /* KMPlaceholderTextView.framework */; };
 		AD3ADA261BF3C7BF00BB40AC /* ExistingGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3ADA251BF3C7BF00BB40AC /* ExistingGroupViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ADCF2F581BF168C50083F1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF2F571BF168C50083F1A0 /* AppDelegate.swift */; };
@@ -42,6 +44,7 @@
 		ADCF2FA51BF199680083F1A0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCF2FA41BF199680083F1A0 /* libsqlite3.tbd */; };
 		ADCF2FA81BF19C2A0083F1A0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCF2FA61BF19C2A0083F1A0 /* libsqlite3.dylib */; };
 		ADCF2FA91BF19C2A0083F1A0 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCF2FA71BF19C2A0083F1A0 /* libz.1.dylib */; };
+		C8B2DA2A444389970923717D /* Pods_BSE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3D7CF92E6CCB1196724909 /* Pods_BSE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1458D9B89EBC1EF15434759C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		3C13525B0DD9EF0B32A40006 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		583304E95731EC55091D4AEC /* Pods-BSE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSE.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSE/Pods-BSE.release.xcconfig"; sourceTree = "<group>"; };
+		5F3D7CF92E6CCB1196724909 /* Pods_BSE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DA7ACAA9195C30277932B3 /* Pods-BSE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSE/Pods-BSE.debug.xcconfig"; sourceTree = "<group>"; };
 		7D390A92937EE2EC8FC9D85F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0621AB1BF54CE800D548B0 /* BullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullTableViewController.swift; sourceTree = "<group>"; };
 		AD0621AD1BF54F9600D548B0 /* BullTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullTableViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		AD0621B71BFE55DC00D548B0 /* PhysicalSingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalSingleViewController.swift; sourceTree = "<group>"; };
 		AD0621B91BFE60BB00D548B0 /* MeasurementsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementsTableViewController.swift; sourceTree = "<group>"; };
 		AD0621BB1BFE746A00D548B0 /* ClassificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationViewController.swift; sourceTree = "<group>"; };
+		AD0621BD1BFE88F200D548B0 /* SemenCounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemenCounterViewController.swift; sourceTree = "<group>"; };
+		AD22521A1C093FD30003D64D /* PhysicalExamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalExamTableViewController.swift; sourceTree = "<group>"; };
 		AD3ADA231BF292A300BB40AC /* KMPlaceholderTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KMPlaceholderTextView.framework; path = "Pods/../build/Debug-iphoneos/KMPlaceholderTextView.framework"; sourceTree = "<group>"; };
 		AD3ADA251BF3C7BF00BB40AC /* ExistingGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingGroupViewController.swift; sourceTree = "<group>"; };
 		ADCF2F541BF168C50083F1A0 /* BSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +134,7 @@
 				ADCF2F901BF198B00083F1A0 /* Parse.framework in Frameworks */,
 				ADCF2F8F1BF198B00083F1A0 /* Bolts.framework in Frameworks */,
 				5BAB3215AB79E868681C0DB4 /* Pods.framework in Frameworks */,
+				C8B2DA2A444389970923717D /* Pods_BSE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,15 +155,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		65C54996330E60DAD900AC46 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3C13525B0DD9EF0B32A40006 /* Pods.debug.xcconfig */,
-				1458D9B89EBC1EF15434759C /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AD0621AF1BF5C07800D548B0 /* ViewControllersFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +173,8 @@
 				AD0621B71BFE55DC00D548B0 /* PhysicalSingleViewController.swift */,
 				AD0621B91BFE60BB00D548B0 /* MeasurementsTableViewController.swift */,
 				AD0621BB1BFE746A00D548B0 /* ClassificationViewController.swift */,
+				AD0621BD1BFE88F200D548B0 /* SemenCounterViewController.swift */,
+				AD22521A1C093FD30003D64D /* PhysicalExamTableViewController.swift */,
 			);
 			name = "Table Views";
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 				ADCF2F6B1BF168C50083F1A0 /* BSETests */,
 				ADCF2F761BF168C50083F1A0 /* BSEUITests */,
 				ADCF2F551BF168C50083F1A0 /* Products */,
-				65C54996330E60DAD900AC46 /* Pods */,
+				FD47D26A8FC1262D5937E3EB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,8 +257,18 @@
 				ADCF2F8D1BF198B00083F1A0 /* Bolts.framework */,
 				ADCF2F8E1BF198B00083F1A0 /* Parse.framework */,
 				7D390A92937EE2EC8FC9D85F /* Pods.framework */,
+				5F3D7CF92E6CCB1196724909 /* Pods_BSE.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD47D26A8FC1262D5937E3EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69DA7ACAA9195C30277932B3 /* Pods-BSE.debug.xcconfig */,
+				583304E95731EC55091D4AEC /* Pods-BSE.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,12 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADCF2F7C1BF168C50083F1A0 /* Build configuration list for PBXNativeTarget "BSE" */;
 			buildPhases = (
-				47715AD6AA514ECA87A9EB88 /* Check Pods Manifest.lock */,
+				6677B66EABEA6EDC97347A94 /* Check Pods Manifest.lock */,
 				ADCF2F501BF168C50083F1A0 /* Sources */,
 				ADCF2F511BF168C50083F1A0 /* Frameworks */,
 				ADCF2F521BF168C50083F1A0 /* Resources */,
-				5F0761122885B95DFD48FEF3 /* Embed Pods Frameworks */,
-				EC0E50A684C72455EA89217F /* Copy Pods Resources */,
+				4EFE92E7B1D8C2B06EF19655 /* Embed Pods Frameworks */,
+				DF05CC7ED10C800542CFB63D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -393,7 +403,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		47715AD6AA514ECA87A9EB88 /* Check Pods Manifest.lock */ = {
+		4EFE92E7B1D8C2B06EF19655 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSE/Pods-BSE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6677B66EABEA6EDC97347A94 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,22 +433,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5F0761122885B95DFD48FEF3 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EC0E50A684C72455EA89217F /* Copy Pods Resources */ = {
+		DF05CC7ED10C800542CFB63D /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,7 +445,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSE/Pods-BSE-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -449,6 +459,7 @@
 				AD0621AC1BF54CE800D548B0 /* BullTableViewController.swift in Sources */,
 				AD0621BC1BFE746A00D548B0 /* ClassificationViewController.swift in Sources */,
 				ADCF2F861BF16C2E0083F1A0 /* GroupsTableViewTableViewController.swift in Sources */,
+				AD0621BE1BFE88F200D548B0 /* SemenCounterViewController.swift in Sources */,
 				AD0621BA1BFE60BB00D548B0 /* MeasurementsTableViewController.swift in Sources */,
 				ADCF2F5A1BF168C50083F1A0 /* ViewController.swift in Sources */,
 				AD0621B41BF5C1BD00D548B0 /* SingleBullTableViewController.swift in Sources */,
@@ -459,6 +470,7 @@
 				AD3ADA261BF3C7BF00BB40AC /* ExistingGroupViewController.swift in Sources */,
 				AD0621B11BF5C13D00D548B0 /* BullInfoViewController.swift in Sources */,
 				AD0621B81BFE55DC00D548B0 /* PhysicalSingleViewController.swift in Sources */,
+				AD22521B1C093FD30003D64D /* PhysicalExamTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +610,7 @@
 		};
 		ADCF2F7D1BF168C50083F1A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C13525B0DD9EF0B32A40006 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 69DA7ACAA9195C30277932B3 /* Pods-BSE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -617,7 +629,7 @@
 		};
 		ADCF2F7E1BF168C50083F1A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1458D9B89EBC1EF15434759C /* Pods.release.xcconfig */;
+			baseConfigurationReference = 583304E95731EC55091D4AEC /* Pods-BSE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
