@@ -2034,6 +2034,7 @@
                                 <connections>
                                     <outlet property="collectionCount" destination="PIU-DI-hz5" id="I23-rD-3ui"/>
                                     <outlet property="collectionDate" destination="uuo-ep-IgR" id="zzf-xs-KjZ"/>
+                                    <segue destination="1LQ-6b-vVp" kind="show" identifier="showCounter" id="1Cf-Hq-DFg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2043,13 +2044,12 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="1LQ-6b-vVp" kind="show" identifier="showCounter" id="bdr-hq-QgY"/>
                         <segue destination="1LQ-6b-vVp" kind="show" identifier="showCounterNew" id="ipA-Zx-sgb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxO-1K-tJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5026" y="287"/>
+            <point key="canvasLocation" x="4916" y="557"/>
         </scene>
         <!--Classification View Controller-->
         <scene sceneID="EKc-Tr-XR3">
@@ -2111,7 +2111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ha0-3d-pb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5026" y="985"/>
+            <point key="canvasLocation" x="4562" y="1369"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bdW-c2-iTC">
@@ -2139,12 +2139,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCP-kN-NWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5026" y="1677"/>
+            <point key="canvasLocation" x="3856" y="1587"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="U6M-M8-EyO"/>
         <segue reference="rBx-R5-rkk"/>
-        <segue reference="ipA-Zx-sgb"/>
+        <segue reference="1Cf-Hq-DFg"/>
     </inferredMetricsTieBreakers>
 </document>

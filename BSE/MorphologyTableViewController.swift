@@ -73,7 +73,7 @@ class MorphologyTableViewController: UITableViewController {
             let date = self.collections[indexPath.row - 1]["createdAt1"] as! NSDate;
             
             let dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "yyyy-mm-dd HH:mm" //format style. Browse online to get a format that fits your needs.
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm" //format style. Browse online to get a format that fits your needs.
             let dateString = dateFormatter.stringFromDate(date);
             
             cell.collectionCount.text = "Total Count: " + String(totalCount);
@@ -115,8 +115,6 @@ class MorphologyTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if(indexPath.row == 0){
             createNewCollection();
-        } else if(indexPath.row > 3){
-            self.performSegueWithIdentifier("showCounter", sender: nil);
         }
         
     }

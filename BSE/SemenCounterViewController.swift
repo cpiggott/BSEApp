@@ -52,7 +52,6 @@ class SemenCounterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Total Count:";
         
         user = PFUser.currentUser();
         
@@ -88,6 +87,13 @@ class SemenCounterViewController: UIViewController {
             button8Count = collection["m8"] as! Int;
         }
         
+        if let _ = collection["totalCount"] {
+            totalCount = collection["totalCount"] as! Int;
+        }
+        
+        self.title = "Total Count: " + String(totalCount);
+
+        
         if let _ = user["m1"]{
             title1 = user["m1"] as! String;
         }
@@ -112,6 +118,8 @@ class SemenCounterViewController: UIViewController {
         if let _ = user["m8"]{
             title8 = user["m8"] as! String;
         }
+        
+        
         
         
         if(title1 != ""){
