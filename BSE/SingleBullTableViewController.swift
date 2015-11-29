@@ -123,6 +123,12 @@ class SingleBullTableViewController: UITableViewController {
             
             bullClassification.bull = self.bull;
         }
+        
+        else if (segue.identifier == "viewSemenQuality"){
+            let semenQuality = segue.destinationViewController as! MorphologyTableViewController;
+            
+            semenQuality.bull = self.bull;
+        }
     }
     
 

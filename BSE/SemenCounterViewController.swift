@@ -15,6 +15,7 @@ class SemenCounterViewController: UIViewController {
     var button1Count = 0;
     
     var bull : PFObject!;
+    var collection : PFObject!;
     
     let button1:UIButton = UIButton(frame: CGRectMake(10, 68, 180, 75))
 

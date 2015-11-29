@@ -22,6 +22,8 @@
 		AD3ADA261BF3C7BF00BB40AC /* ExistingGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3ADA251BF3C7BF00BB40AC /* ExistingGroupViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD7A325C1C096D8600D2A008 /* VetInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A325B1C096D8600D2A008 /* VetInfoTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AD7A325E1C096E9D00D2A008 /* MorphologyIFieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A325D1C096E9D00D2A008 /* MorphologyIFieldsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD7A32601C0A851F00D2A008 /* MorphologyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A325F1C0A851F00D2A008 /* MorphologyTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD7A32621C0A895D00D2A008 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A32611C0A895D00D2A008 /* CollectionTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		ADCF2F581BF168C50083F1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF2F571BF168C50083F1A0 /* AppDelegate.swift */; };
 		ADCF2F5A1BF168C50083F1A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF2F591BF168C50083F1A0 /* ViewController.swift */; };
 		ADCF2F5D1BF168C50083F1A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCF2F5B1BF168C50083F1A0 /* Main.storyboard */; };
@@ -85,6 +87,8 @@
 		AD3ADA251BF3C7BF00BB40AC /* ExistingGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingGroupViewController.swift; sourceTree = "<group>"; };
 		AD7A325B1C096D8600D2A008 /* VetInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VetInfoTableViewController.swift; sourceTree = "<group>"; };
 		AD7A325D1C096E9D00D2A008 /* MorphologyIFieldsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorphologyIFieldsTableViewController.swift; sourceTree = "<group>"; };
+		AD7A325F1C0A851F00D2A008 /* MorphologyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorphologyTableViewController.swift; sourceTree = "<group>"; };
+		AD7A32611C0A895D00D2A008 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		ADCF2F541BF168C50083F1A0 /* BSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCF2F571BF168C50083F1A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADCF2F591BF168C50083F1A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				AD22521A1C093FD30003D64D /* PhysicalExamTableViewController.swift */,
 				AD7A325B1C096D8600D2A008 /* VetInfoTableViewController.swift */,
 				AD7A325D1C096E9D00D2A008 /* MorphologyIFieldsTableViewController.swift */,
+				AD7A325F1C0A851F00D2A008 /* MorphologyTableViewController.swift */,
+				AD7A32611C0A895D00D2A008 /* CollectionTableViewCell.swift */,
 			);
 			name = "Table Views";
 			sourceTree = "<group>";
@@ -466,6 +472,7 @@
 				AD0621AC1BF54CE800D548B0 /* BullTableViewController.swift in Sources */,
 				AD0621BC1BFE746A00D548B0 /* ClassificationViewController.swift in Sources */,
 				ADCF2F861BF16C2E0083F1A0 /* GroupsTableViewTableViewController.swift in Sources */,
+				AD7A32601C0A851F00D2A008 /* MorphologyTableViewController.swift in Sources */,
 				AD0621BE1BFE88F200D548B0 /* SemenCounterViewController.swift in Sources */,
 				AD0621BA1BFE60BB00D548B0 /* MeasurementsTableViewController.swift in Sources */,
 				ADCF2F5A1BF168C50083F1A0 /* ViewController.swift in Sources */,
@@ -475,6 +482,7 @@
 				ADCF2F8A1BF16F010083F1A0 /* ExistingGroupTableViewCell.swift in Sources */,
 				ADCF2F581BF168C50083F1A0 /* AppDelegate.swift in Sources */,
 				AD0621B61BFC5CC400D548B0 /* BullMatingViewController.swift in Sources */,
+				AD7A32621C0A895D00D2A008 /* CollectionTableViewCell.swift in Sources */,
 				AD3ADA261BF3C7BF00BB40AC /* ExistingGroupViewController.swift in Sources */,
 				AD0621B11BF5C13D00D548B0 /* BullInfoViewController.swift in Sources */,
 				AD0621B81BFE55DC00D548B0 /* PhysicalSingleViewController.swift in Sources */,

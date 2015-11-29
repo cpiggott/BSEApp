@@ -70,15 +70,10 @@ class BullTableViewController: UITableViewController {
         
         return cell;
 
-        
-        
-        
-
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if(indexPath.row == 0) {
-            print("Hello");
             getBullID();
         }
         
@@ -129,9 +124,6 @@ class BullTableViewController: UITableViewController {
 
             
         });
-        
-        
-        
 
     }
     
