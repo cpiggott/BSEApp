@@ -11,6 +11,7 @@ import UIKit
 class CollectionTableViewCell: UITableViewCell {
 
     @IBOutlet var collectionCount: UILabel!
+    @IBOutlet var collectionDate: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

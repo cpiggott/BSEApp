@@ -2006,7 +2006,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIU-DI-hz5">
-                                            <rect key="frame" x="8" y="16" width="584" height="20.5"/>
+                                            <rect key="frame" x="8" y="12" width="584" height="20.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collected At: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuo-ep-IgR">
+                                            <rect key="frame" x="8" y="36" width="584" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -2015,14 +2022,18 @@
                                     </subviews>
                                     <animations/>
                                     <constraints>
-                                        <constraint firstItem="PIU-DI-hz5" firstAttribute="leading" secondItem="sdp-W9-m5B" secondAttribute="leadingMargin" id="CbC-HD-0m3"/>
-                                        <constraint firstItem="PIU-DI-hz5" firstAttribute="top" secondItem="sdp-W9-m5B" secondAttribute="topMargin" constant="8" id="MKI-V2-Uzq"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="PIU-DI-hz5" secondAttribute="trailing" id="bvV-HU-eRJ"/>
+                                        <constraint firstItem="uuo-ep-IgR" firstAttribute="leading" secondItem="sdp-W9-m5B" secondAttribute="leadingMargin" id="CWG-Lm-GFe"/>
+                                        <constraint firstItem="uuo-ep-IgR" firstAttribute="top" secondItem="PIU-DI-hz5" secondAttribute="bottom" constant="4" id="UKC-co-065"/>
+                                        <constraint firstItem="PIU-DI-hz5" firstAttribute="leading" secondItem="sdp-W9-m5B" secondAttribute="leadingMargin" id="VCr-VJ-WtQ"/>
+                                        <constraint firstItem="PIU-DI-hz5" firstAttribute="trailing" secondItem="sdp-W9-m5B" secondAttribute="trailingMargin" id="gyF-Uj-ifR"/>
+                                        <constraint firstItem="uuo-ep-IgR" firstAttribute="trailing" secondItem="sdp-W9-m5B" secondAttribute="trailingMargin" id="lFX-RW-pHZ"/>
+                                        <constraint firstItem="PIU-DI-hz5" firstAttribute="top" secondItem="sdp-W9-m5B" secondAttribute="topMargin" constant="4" id="mN9-ac-Bi5"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
                                     <outlet property="collectionCount" destination="PIU-DI-hz5" id="I23-rD-3ui"/>
+                                    <outlet property="collectionDate" destination="uuo-ep-IgR" id="zzf-xs-KjZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

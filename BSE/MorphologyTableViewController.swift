@@ -61,21 +61,7 @@ class MorphologyTableViewController: UITableViewController {
             return cell;
         }
         
-        /*if (indexPath.row == 1){
-            let cell = tableView.dequeueReusableCellWithIdentifier("motilityPercent", forIndexPath: indexPath);
-            return cell;
-        }
-        
-        if (indexPath.row == 2){
-            let cell = tableView.dequeueReusableCellWithIdentifier("motilityClassification", forIndexPath: indexPath);
-            return cell;
-        }
-        
-        if (indexPath.row == 3){
-            let cell = tableView.dequeueReusableCellWithIdentifier("newCollection", forIndexPath: indexPath);
-            return cell;
-        }
-*/
+       
         
         
         let cell : CollectionTableViewCell = tableView.dequeueReusableCellWithIdentifier("existingCollection", forIndexPath: indexPath) as! CollectionTableViewCell;
@@ -84,7 +70,14 @@ class MorphologyTableViewController: UITableViewController {
             
             let totalCount = self.collections[indexPath.row - 1]["totalCount"] as! Int;
             
-            cell.collectionCount.text = String(totalCount);
+            let date = self.collections[indexPath.row - 1]["createdAt1"] as! NSDate;
+            
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "yyyy-mm-dd HH:mm" //format style. Browse online to get a format that fits your needs.
+            let dateString = dateFormatter.stringFromDate(date);
+            
+            cell.collectionCount.text = "Total Count: " + String(totalCount);
+            cell.collectionDate.text = "Collected On: " + dateString;
         }
         
         return cell;
@@ -98,7 +91,7 @@ class MorphologyTableViewController: UITableViewController {
         let query = PFQuery(className: "Collection");
         
         query.fromLocalDatastore();
-        query.orderByAscending("createdAt")
+        query.orderByAscending("createdAt1");
         query.whereKey("bull", equalTo: self.bull);
         
         query.findObjectsInBackgroundWithBlock { (collectionsArray: [PFObject]?, error: NSError?) -> Void in
