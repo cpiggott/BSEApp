@@ -41,6 +41,14 @@ class ExistingGroupViewController: UIViewController {
     }
     
 
+    @IBAction func exportData(sender: AnyObject) {
+        
+        //Export data here
+        
+        
+        
+        
+    }
     
     // MARK: - Navigation
 

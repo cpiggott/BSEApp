@@ -720,6 +720,9 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Export Data"/>
+                                <connections>
+                                    <action selector="exportData:" destination="0fz-pZ-KzG" eventType="touchUpInside" id="PdV-0Y-5ZN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -1087,7 +1090,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semen Quality" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBd-CN-ol4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morphology" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBd-CN-ol4">
                                                     <rect key="frame" x="8" y="8" width="551" height="28"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1108,8 +1111,36 @@
                                             <segue destination="YrM-nI-pI4" kind="show" identifier="viewSemenQuality" id="PMk-XS-7d3"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="pLo-PF-MU3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="L5Z-Hn-nvJ">
                                         <rect key="frame" x="0.0" y="240" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L5Z-Hn-nvJ" id="bfw-w1-aaN">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motility" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSO-os-RFh">
+                                                    <rect key="frame" x="8" y="8" width="551" height="28"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="sSO-os-RFh" firstAttribute="top" secondItem="bfw-w1-aaN" secondAttribute="topMargin" id="2H2-ts-KYH"/>
+                                                <constraint firstItem="sSO-os-RFh" firstAttribute="leading" secondItem="bfw-w1-aaN" secondAttribute="leadingMargin" id="D8o-eo-Wxa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sSO-os-RFh" secondAttribute="bottom" id="GeV-nn-I0Z"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="sSO-os-RFh" secondAttribute="trailing" id="eiM-ZQ-kUE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="nEV-Zp-hLW" kind="show" identifier="showMotilityFields" id="1Aj-Ao-O1q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="pLo-PF-MU3">
+                                        <rect key="frame" x="0.0" y="284" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pLo-PF-MU3" id="nci-ZP-6kS">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -1137,7 +1168,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="6cO-7T-W94">
-                                        <rect key="frame" x="0.0" y="284" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="328" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6cO-7T-W94" id="0FZ-QX-tpk">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -2049,7 +2080,79 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxO-1K-tJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4916" y="557"/>
+            <point key="canvasLocation" x="5026" y="267"/>
+        </scene>
+        <!--Motility Info View Controller-->
+        <scene sceneID="fSK-a3-Gps">
+            <objects>
+                <viewController id="nEV-Zp-hLW" customClass="MotilityInfoViewController" customModule="BSE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4bI-wz-yvW"/>
+                        <viewControllerLayoutGuide type="bottom" id="686-Ju-96Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dUx-jj-mCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Individual Motility" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAx-T4-fh2" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="20" y="72" width="560" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Motility %" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9W6-y7-prW" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="20" y="122" width="560" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gross Motility Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmw-G5-wwp">
+                                <rect key="frame" x="20" y="172" width="560" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="pQ4-Ie-z4c">
+                                <rect key="frame" x="20" y="200.5" width="560" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Poor"/>
+                                    <segment title="Fair"/>
+                                    <segment title="Good"/>
+                                    <segment title="Very good"/>
+                                </segments>
+                                <connections>
+                                    <action selector="gossChanged:" destination="nEV-Zp-hLW" eventType="valueChanged" id="0sJ-KY-kJG"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9W6-y7-prW" firstAttribute="trailing" secondItem="dUx-jj-mCZ" secondAttribute="trailingMargin" id="2im-Am-bp0"/>
+                            <constraint firstItem="pQ4-Ie-z4c" firstAttribute="leading" secondItem="dUx-jj-mCZ" secondAttribute="leadingMargin" id="3j1-5u-RBH"/>
+                            <constraint firstItem="Zmw-G5-wwp" firstAttribute="leading" secondItem="dUx-jj-mCZ" secondAttribute="leadingMargin" id="4By-9z-bOd"/>
+                            <constraint firstItem="pQ4-Ie-z4c" firstAttribute="trailing" secondItem="dUx-jj-mCZ" secondAttribute="trailingMargin" id="Hho-op-IKD"/>
+                            <constraint firstItem="Zmw-G5-wwp" firstAttribute="top" secondItem="9W6-y7-prW" secondAttribute="bottom" constant="8" id="HsX-7P-bbL"/>
+                            <constraint firstItem="oAx-T4-fh2" firstAttribute="trailing" secondItem="dUx-jj-mCZ" secondAttribute="trailingMargin" id="Mgj-VD-Xs4"/>
+                            <constraint firstItem="9W6-y7-prW" firstAttribute="leading" secondItem="dUx-jj-mCZ" secondAttribute="leadingMargin" id="PS6-ao-rDZ"/>
+                            <constraint firstItem="oAx-T4-fh2" firstAttribute="leading" secondItem="dUx-jj-mCZ" secondAttribute="leadingMargin" id="T56-LZ-X2e"/>
+                            <constraint firstItem="oAx-T4-fh2" firstAttribute="top" secondItem="4bI-wz-yvW" secondAttribute="bottom" constant="8" id="azj-Fg-EIm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zmw-G5-wwp" secondAttribute="trailing" id="giu-IM-d3w"/>
+                            <constraint firstItem="pQ4-Ie-z4c" firstAttribute="top" secondItem="Zmw-G5-wwp" secondAttribute="bottom" constant="8" id="n8A-b8-CIn"/>
+                            <constraint firstItem="9W6-y7-prW" firstAttribute="top" secondItem="oAx-T4-fh2" secondAttribute="bottom" constant="8" id="xMW-UL-heU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="grossMotility" destination="pQ4-Ie-z4c" id="IWO-lZ-9cL"/>
+                        <outlet property="individualMotility" destination="oAx-T4-fh2" id="Faf-E5-n64"/>
+                        <outlet property="motilityPercent" destination="9W6-y7-prW" id="TAc-zv-Cnt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJb-YH-2tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5026" y="939"/>
         </scene>
         <!--Classification View Controller-->
         <scene sceneID="EKc-Tr-XR3">
@@ -2111,7 +2214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ha0-3d-pb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4562" y="1369"/>
+            <point key="canvasLocation" x="4562" y="1593"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bdW-c2-iTC">
@@ -2143,8 +2246,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="U6M-M8-EyO"/>
         <segue reference="rBx-R5-rkk"/>
+        <segue reference="U6M-M8-EyO"/>
         <segue reference="1Cf-Hq-DFg"/>
     </inferredMetricsTieBreakers>
 </document>

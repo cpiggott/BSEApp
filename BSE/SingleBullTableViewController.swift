@@ -129,6 +129,14 @@ class SingleBullTableViewController: UITableViewController {
             
             semenQuality.bull = self.bull;
         }
+        
+        else if (segue.identifier == "showMotilityFields"){
+            
+            let motility = segue.destinationViewController as! MotilityInfoViewController;
+            
+            motility.bull = self.bull;
+            
+        }
     }
     
 

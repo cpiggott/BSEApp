@@ -28,7 +28,6 @@ class NewGroupViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("NewGroupController");
         ranchName.delegate = self;
         firstName.delegate = self;
         
@@ -54,7 +53,7 @@ class NewGroupViewController: UIViewController, UITextFieldDelegate {
         ranchInfo["firstName"] = firstName.text;
         ranchInfo["lastName"] = lastName.text;
         ranchInfo["address1"] = address1.text;
-        ranchInfo["address1"] = address2.text;
+        ranchInfo["address2"] = address2.text;
         ranchInfo["city"] = city.text;
         ranchInfo["state"] = state.text;
         ranchInfo["zip"] = zip.text;
