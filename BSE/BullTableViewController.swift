@@ -116,6 +116,7 @@ class BullTableViewController: UITableViewController {
         let bull = PFObject(className:"Bull")
         bull["bullID"] = bullID;
         bull["group"] = self.group;
+        bull["datePerformed"] = NSDate();
         
         bull.pinInBackgroundWithBlock({(success: Bool, error: NSError?) -> Void in
             
