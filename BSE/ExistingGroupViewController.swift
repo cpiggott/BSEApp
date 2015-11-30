@@ -14,6 +14,8 @@ class ExistingGroupViewController: UIViewController {
     
     var group: PFObject!;
     
+    var user : PFUser!;
+    
     var bulls = [PFObject]();
     var lines = [String]();
     
@@ -36,6 +38,8 @@ class ExistingGroupViewController: UIViewController {
         
         
         dateCollected.text = myDateFormatter.stringFromDate(date);
+        
+        user = PFUser.currentUser();
         
 
         // Do any additional setup after loading the view.generalInfo_comments,
@@ -536,6 +540,8 @@ class ExistingGroupViewController: UIViewController {
             
             if(bull["grossType"] != nil){
                 line  += bull["grossType"] as! String;
+                line += ",";
+
             }
             else {
                 line += ",";
@@ -543,6 +549,8 @@ class ExistingGroupViewController: UIViewController {
             
             if(bull["individualMotility"] != nil){
                 line  += bull["individualMotility"] as! String;
+                line += ",";
+
             }
             else {
                 line += ",";
@@ -550,24 +558,256 @@ class ExistingGroupViewController: UIViewController {
             
             if(bull["motilityPercent"] != nil){
                 line  += bull["motilityPercent"] as! String;
+                line += ",";
+
+            }
+            else {
+                line += ",";
+            }
+            
+            if(bull["bodyCondition"] != nil){
+                line  += bull["bodyCondition"] as! String;
+                line += ",,";
+
+            }
+            else {
+                line += ",,";
+            }
+            
+            if(bull["frameScore"] != nil){
+                line  += bull["frameScore"] as! String;
+                line += ",";
+
+            }
+            else {
+                line += ",";
+            }
+            
+            if(bull["hipHeight"] != nil){
+                line  += bull["hipHeight"] as! String;
+                line += ",cm,";
+                
+            }
+            else {
+                line += ",cm,";
+            }
+            
+            if(bull["pelvicXMeasurement"] != nil){
+                line  += bull["pelvicXMeasurement"] as! String;
+                line += ",cm,";
+                
+            }
+            else {
+                line += ",cm,";
+            }
+            
+            if(bull["pelvicYMeasurement"] != nil){
+                line  += bull["pelvicYMeasurement"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(bull["scrotalCircumference"] != nil){
+                line  += bull["scrotalCircumference"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(group["address1"] != nil){
+                line  += group["address1"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(group["address2"] != nil){
+                line  += group["address2"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(group["city"] != nil){
+                line  += group["city"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(group["phone"] != nil){
+                line  += group["phone"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(group["phone"] != nil){
+                line  += group["phone"] as! String;
+                line += ",";
+                
             }
             else {
                 line += ",";
             }
             
             
+            if(group["state"] != nil){
+                line  += group["state"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(group["zip"] != nil){
+                line  += group["zip"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+
+            if(group["firstName"] != nil){
+                line  += group["firstName"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(group["lastname"] != nil){
+                line  += group["lastName"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(group["ranchName"] != nil){
+                line  += group["ranchName"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            line += NSUUID().UUIDString + ",";
             
             
+            if(user["address1"] != nil){
+                line  += user["address1"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
             
+            if(user["address2"] != nil){
+                line  += user["address2"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
             
+            if(user["city"] != nil){
+                line  += user["city"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
             
+            if(user["email"] != nil){
+                line  += user["email"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
             
+            if(user["phone"] != nil){
+                line  += user["phone"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
             
+            if(user["state"] != nil){
+                line  += user["state"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
             
+            if(user["zip"] != nil){
+                line  += user["zip"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
             
+            if(user["clinicName"] != nil){
+                line  += user["clinicName"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
             
+            if(user["firstName"] != nil){
+                line  += user["firstName"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            
+            if(user["lastName"] != nil){
+                line  += user["lastName"] as! String;
+                line += ",";
+                
+            }
+            else {
+                line += ",";
+            }
+            lines.append(line);
+            line = "";
             
         }
+        
+        //export CSV here
         
         
     }
