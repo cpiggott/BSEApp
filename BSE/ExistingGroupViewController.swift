@@ -19,7 +19,9 @@ class ExistingGroupViewController: UIViewController {
     var bulls = [PFObject]();
     var lines = [String]();
     
-    var header = "animal_age,animal_ageType,animal_brand,animal_breed,animal_dateOfBirth,animal_lotNumber,animal_rfid,animal_tag,animal_tattoo,bodyPartInfo_bodyParts_0_description,bodyPartInfo_bodyParts_0_name,bodyPartInfo_bodyParts_0_normal,bodyPartInfo_bodyParts_10_description,bodyPartInfo_bodyParts_10_name,bodyPartInfo_bodyParts_11_normal,bodyPartInfo_bodyParts_11_description,bodyPartInfo_bodyParts_11_name,bodyPartInfo_bodyParts_10_normal,bodyPartInfo_bodyParts_1_description,bodyPartInfo_bodyParts_1_name,bodyPartInfo_bodyParts_1_normal,bodyPartInfo_bodyParts_2_description,bodyPartInfo_bodyParts_2_name,bodyPartInfo_bodyParts_2_normal,bodyPartInfo_bodyParts_3_description,bodyPartInfo_bodyParts_3_name,bodyPartInfo_bodyParts_3_normal,bodyPartInfo_bodyParts_4_description,bodyPartInfo_bodyParts_4_name,bodyPartInfo_bodyParts_4_normal,bodyPartInfo_bodyParts_5_description,bodyPartInfo_bodyParts_5_name,bodyPartInfo_bodyParts_5_normal,bodyPartInfo_bodyParts_6_description,bodyPartInfo_bodyParts_6_name,bodyPartInfo_bodyParts_6_normal,bodyPartInfo_bodyParts_7_description,bodyPartInfo_bodyParts_7_name,bodyPartInfo_bodyParts_7_normal,bodyPartInfo_bodyParts_8_description,bodyPartInfo_bodyParts_8_name,bodyPartInfo_bodyParts_8_normal,bodyPartInfo_bodyParts_9_description,bodyPartInfo_bodyParts_9_name,bodyPartInfo_bodyParts_9_normal,bodyPartInfo_comments,collectionNumber,completed,datePerformed,generalInfo_classification,generalInfo_comments,generalInfo_customMeasurements_0_otherChoice_label,generalInfo_customMeasurements_0_value,matingInfo_comments,matingInfo_performance,matingInfo_performanceDescription,matingInfo_seasonsUsed,matingInfo_sirePastureType,morphologyInfo_comments,morphologyInfo_morphologyMeasurements_0_count,morphologyInfo_morphologyMeasurements_0_morphologyChoice_label,morphologyInfo_morphologyMeasurements_1_count,morphologyInfo_morphologyMeasurements_1_morphologyChoice_label,morphologyInfo_morphologyMeasurements_2_count,morphologyInfo_morphologyMeasurements_2_morphologyChoice_label,morphologyInfo_morphologyMeasurements_3_count,morphologyInfo_morphologyMeasurements_3_morphologyChoice_label,morphologyInfo_morphologyMeasurements_4_count,morphologyInfo_morphologyMeasurements_4_morphologyChoice_label,morphologyInfo_morphologyMeasurements_5_count,morphologyInfo_morphologyMeasurements_5_morphologyChoice_label,morphologyInfo_morphologyMeasurements_6_count,morphologyInfo_morphologyMeasurements_6_morphologyChoice_label,morphologyInfo_morphologyMeasurements_7_count,morphologyInfo_morphologyMeasurements_7_morphologyChoice_label,morphologyInfo_morphologyMeasurements_8_count,morphologyInfo_morphologyMeasurements_0_morphologyChoice_label,motilityInfo_comments,motilityInfo_grossMotilityCategory,motilityInfo_individualMotility,motilityInfo_motilityPercent,physicalInfo_bodyCondition,physicalInfo_comments,physicalInfo_frameScore,physicalInfo_hipHeight,physicalInfo_hipHeightUnits,physicalInfo_pelvicXMeasure,physicalInfo_pelvicYMeasure,physicalInfo_scrotalCircumference,rancher_address_address1,rancher_address_address2,rancher_address_city,rancher_address_email,rancher_address_phone,rancher_address_state,rancher_address_zip,rancher_firstName,rancher_lastName,rancher_ranchName,uuid,veterinarian_address_address1,veterinarian_address_address2,veterinarian_address_city,veterinarian_address_email,veterinarian_address_phone,veterinarian_address_state,veterinarian_address_zip,veterinarian_clinicName,veterinarian_firstName,veterinarian_lastName";
+    var header = "animal_age,animal_ageType,animal_brand,animal_breed,animal_dateOfBirth,animal_lotNumber,animal_rfid,animal_tag,animal_tattoo,bodyPartInfo_bodyParts_0_description,bodyPartInfo_bodyParts_0_name,bodyPartInfo_bodyParts_0_normal,bodyPartInfo_bodyParts_10_description,bodyPartInfo_bodyParts_10_name,bodyPartInfo_bodyParts_10_normal,bodyPartInfo_bodyParts_1_description,bodyPartInfo_bodyParts_1_name,bodyPartInfo_bodyParts_1_normal,bodyPartInfo_bodyParts_2_description,bodyPartInfo_bodyParts_2_name,bodyPartInfo_bodyParts_2_normal,bodyPartInfo_bodyParts_3_description,bodyPartInfo_bodyParts_3_name,bodyPartInfo_bodyParts_3_normal,bodyPartInfo_bodyParts_4_description,bodyPartInfo_bodyParts_4_name,bodyPartInfo_bodyParts_4_normal,bodyPartInfo_bodyParts_5_description,bodyPartInfo_bodyParts_5_name,bodyPartInfo_bodyParts_5_normal,bodyPartInfo_bodyParts_6_description,bodyPartInfo_bodyParts_6_name,bodyPartInfo_bodyParts_6_normal,bodyPartInfo_bodyParts_7_description,bodyPartInfo_bodyParts_7_name,bodyPartInfo_bodyParts_7_normal,bodyPartInfo_bodyParts_8_description,bodyPartInfo_bodyParts_8_name,bodyPartInfo_bodyParts_8_normal,bodyPartInfo_bodyParts_9_description,bodyPartInfo_bodyParts_9_name,bodyPartInfo_bodyParts_9_normal,collectionNumber,completed,datePerformed,generalInfo_classification,generalInfo_comments,matingInfo_comments,matingInfo_performance,matingInfo_performanceDescription,matingInfo_seasonsUsed,matingInfo_sirePastureType,morphologyInfo_comments,morphologyInfo_morphologyMeasurements_0_count,morphologyInfo_morphologyMeasurements_0_morphologyChoice_label,morphologyInfo_morphologyMeasurements_1_count,morphologyInfo_morphologyMeasurements_1_morphologyChoice_label,morphologyInfo_morphologyMeasurements_2_count,morphologyInfo_morphologyMeasurements_2_morphologyChoice_label,morphologyInfo_morphologyMeasurements_3_count,morphologyInfo_morphologyMeasurements_3_morphologyChoice_label,morphologyInfo_morphologyMeasurements_4_count,morphologyInfo_morphologyMeasurements_4_morphologyChoice_label,morphologyInfo_morphologyMeasurements_5_count,morphologyInfo_morphologyMeasurements_5_morphologyChoice_label,morphologyInfo_morphologyMeasurements_6_count,morphologyInfo_morphologyMeasurements_6_morphologyChoice_label,morphologyInfo_morphologyMeasurements_7_count,morphologyInfo_morphologyMeasurements_7_morphologyChoice_label,motilityInfo_comments,motilityInfo_grossMotilityCategory,motilityInfo_individualMotility,motilityInfo_motilityPercent,physicalInfo_bodyCondition,physicalInfo_comments,physicalInfo_frameScore,physicalInfo_hipHeight,physicalInfo_hipHeightUnits,physicalInfo_pelvicXMeasure,physicalInfo_pelvicYMeasure,physicalInfo_scrotalCircumference,rancher_address_address1,rancher_address_address2,rancher_address_city,rancher_address_email,rancher_address_phone,rancher_address_state,rancher_address_zip,rancher_firstName,rancher_lastName,rancher_ranchName,uuid,veterinarian_address_address1,veterinarian_address_address2,veterinarian_address_city,veterinarian_address_email,veterinarian_address_phone,veterinarian_address_state,veterinarian_address_zip,veterinarian_clinicName,veterinarian_firstName,veterinarian_lastName\n";
+    
+    var finalCSVLine = "";
     
 
     @IBOutlet var ranchName: UILabel!
@@ -54,6 +56,8 @@ class ExistingGroupViewController: UIViewController {
     @IBAction func exportData(sender: AnyObject) {
         
         //Export data here
+        lines.append(header);
+
         
         let query = PFQuery(className: "Bull");
         query.fromLocalDatastore();
@@ -90,7 +94,8 @@ class ExistingGroupViewController: UIViewController {
             line += ",,";
             if (bull["idType"] != nil){
                 if (bull["idType"] as! String == "Brand"){
-                    line += "TRUE,";
+                    line += bull["bullID"] as! String;
+                    line += ",";
                 }
                 else {
                     line += ",";
@@ -130,7 +135,8 @@ class ExistingGroupViewController: UIViewController {
             
             if (bull["idType"] != nil){
                 if (bull["idType"] as! String == "RFID"){
-                    line += "TRUE,";
+                    line += bull["bullID"] as! String;
+                    line += ",";
                 }
                 else {
                     line += ",";
@@ -142,7 +148,8 @@ class ExistingGroupViewController: UIViewController {
             
             if(bull["idType"] != nil){
                 if (bull["idType"] as! String == "Tag"){
-                    line += "TRUE,";
+                    line += bull["bullID"] as! String;
+                    line += ",";
                 }
                 else {
                     line += ",";
@@ -154,7 +161,8 @@ class ExistingGroupViewController: UIViewController {
             
             if(bull["idType"] != nil){
                 if (bull["idType"] as! String == "Tattoo"){
-                    line += "TRUE,";
+                    line += bull["bullID"] as! String;
+                    line += ",";
                 }
                 else {
                     line += ",";
@@ -167,136 +175,136 @@ class ExistingGroupViewController: UIViewController {
             if(bull["eyeDescription"] as! String != ""){
                 line += bull["eyeDescription"] as! String;
                 line += ",";
-                line += "Eye Description";
+                line += "Eye";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Eye Description,TRUE,";
+                line += ",Eye,TRUE,";
             }
             
             if(bull["feetDescription"] as! String != ""){
                 line += bull["feetDescription"] as! String;
                 line += ",";
-                line += "Feet Description";
+                line += "Feet";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Feet Description,TRUE,";
+                line += ",Feet,TRUE,";
             }
             
             if(bull["legsDescription"] as! String != ""){
                 line += bull["legsDescription"] as! String;
                 line += ",";
-                line += "Legs Description";
+                line += "Legs";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Legs Description,TRUE,";
+                line += ",Legs,TRUE,";
             }
             
             if(bull["testiclesDescription"] as! String != ""){
                 line += bull["testiclesDescription"] as! String;
                 line += ",";
-                line += "Testicle Description";
+                line += "Testicle";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Testicle Description,TRUE,";
+                line += ",Testicle,TRUE,";
             }
             
             if(bull["accesoryDescription"] as! String != ""){
                 line += bull["accesoryDescription"] as! String;
                 line += ",";
-                line += "Accessory Description";
+                line += "Accessory";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Accesory Description,TRUE,";
+                line += ",Accesory,TRUE,";
             }
             
             if(bull["inguinalDescription"] as! String != ""){
                 line += bull["inguinalDescription"] as! String;
                 line += ",";
-                line += "Inguinal Description";
+                line += "Inguinal";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Inguinal Description,TRUE,";
+                line += ",Inguinal,TRUE,";
             }
             
             if(bull["scrotalDescription"] as! String != ""){
                 line += bull["scrotalDescription"] as! String;
                 line += ",";
-                line += "Scrotal Description";
+                line += "Scrotal";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Scrotal Description,TRUE,";
+                line += ",Scrotal,TRUE,";
             }
             
             if(bull["epidydimidesDescription"] as! String != ""){
                 line += bull["epidydimidesDescription"] as! String;
                 line += ",";
-                line += "Epidydimides Description";
+                line += "Epidydimides";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Epidydimides Description,TRUE,";
+                line += ",Epidydimides,TRUE,";
             }
             
             if(bull["penisDescription"] as! String != ""){
                 line += bull["penisDescription"] as! String;
                 line += ",";
-                line += "Penis Description";
+                line += "Penis";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Penis Description,TRUE,";
+                line += ",Penis,TRUE,";
             }
             
             if(bull["prepuceDescription"] as! String != ""){
                 line += bull["prepuceDescription"] as! String;
                 line += ",";
-                line += "Prepuce Description";
+                line += "Prepuce";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Prepuce Description,TRUE,";
+                line += ",Prepuce,TRUE,";
             }
             
             if(bull["scrotumDescription"] as! String != ""){
                 line += bull["scrotumDescription"] as! String;
                 line += ",";
-                line += "Scrotum Description";
+                line += "Scrotum";
                 line += ",";
                 line += "FALSE";
                 line += ",";
             }
             else{
-                line += ",Scrotum Description,TRUE,";
+                line += ",Scrotum,TRUE,";
             }
             
-            line += ",1,,";//codyPartComments,Collection number,completed,
+            line += "1,,";//codyPartComments,Collection number,completed,
             
             if(bull["datePerformed"] != nil){
                 let datePerormed = bull["datePerformed"] as! NSDate;
@@ -326,7 +334,6 @@ class ExistingGroupViewController: UIViewController {
                 line += ",";
             }
             
-            line += ",,"; //generalInfo_customMeasurements_0_otherChoice_label,generalInfo_customMeasurements_0_value
             
             
             if(bull["matingComments"] != nil) {
@@ -369,7 +376,7 @@ class ExistingGroupViewController: UIViewController {
                 line += ",";
             }
             
-            line += ",";//Morphology comments
+            //line += ",";//Morphology comments
             
             //Morphology Value
             //Morphology Fields
@@ -594,11 +601,11 @@ class ExistingGroupViewController: UIViewController {
             
             if(bull["pelvicXMeasurement"] != nil){
                 line  += bull["pelvicXMeasurement"] as! String;
-                line += ",cm,";
+                line += ",";
                 
             }
             else {
-                line += ",cm,";
+                line += ",";
             }
             
             if(bull["pelvicYMeasurement"] != nil){
@@ -646,8 +653,8 @@ class ExistingGroupViewController: UIViewController {
                 line += ",";
             }
             
-            if(group["phone"] != nil){
-                line  += group["phone"] as! String;
+            if(group["email"] != nil){
+                line  += group["email"] as! String;
                 line += ",";
                 
             }
@@ -692,8 +699,8 @@ class ExistingGroupViewController: UIViewController {
                 line += ",";
             }
             
-            if(group["lastname"] != nil){
-                line  += group["lastName"] as! String;
+            if(group["firstName"] != nil){
+                line  += group["firstName"] as! String;
                 line += ",";
                 
             }
@@ -796,18 +803,27 @@ class ExistingGroupViewController: UIViewController {
             
             if(user["lastName"] != nil){
                 line  += user["lastName"] as! String;
-                line += ",";
+                
                 
             }
             else {
-                line += ",";
+                
             }
+            line += "\n";
             lines.append(line);
             line = "";
             
         }
         
+        for singleLine in lines{
+            finalCSVLine += singleLine;
+        }
+        
         //export CSV here
+        saveAndExport(finalCSVLine);
+        
+        finalCSVLine = "";
+        lines = [String]();
         
         
     }
@@ -823,6 +839,41 @@ class ExistingGroupViewController: UIViewController {
             let bullTableVC = segue.destinationViewController as! BullTableViewController;
             
             bullTableVC.group = self.group;
+        }
+    }
+    
+    func saveAndExport(exportString: String) {
+        let exportFilePath = NSTemporaryDirectory() + "export8.csv"
+        let exportFileURL = NSURL(fileURLWithPath: exportFilePath)
+        NSFileManager.defaultManager().createFileAtPath(exportFilePath, contents: NSData(), attributes: nil)
+        var fileHandleError: NSError? = nil
+        var fileHandle: NSFileHandle? = nil
+        do {
+            fileHandle = try NSFileHandle(forWritingToURL: exportFileURL)
+        } catch {
+            print("Error with fileHandle")
+        }
+        
+        if fileHandle != nil {
+            fileHandle!.seekToEndOfFile()
+            let csvData = exportString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+            fileHandle!.writeData(csvData!)
+            
+            fileHandle!.closeFile()
+            
+            let firstActivityItem = NSURL(fileURLWithPath: exportFilePath)
+            let activityViewController : UIActivityViewController = UIActivityViewController(
+                activityItems: [firstActivityItem], applicationActivities: nil)
+            
+            activityViewController.excludedActivityTypes = [
+                UIActivityTypeAssignToContact,
+                UIActivityTypeSaveToCameraRoll,
+                UIActivityTypePostToFlickr,
+                UIActivityTypePostToVimeo,
+                UIActivityTypePostToTencentWeibo
+            ]
+            
+            self.presentViewController(activityViewController, animated: true, completion: nil)
         }
     }
     

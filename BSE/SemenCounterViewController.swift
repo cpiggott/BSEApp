@@ -193,7 +193,7 @@ class SemenCounterViewController: UIViewController {
         
         if(title8 != ""){
             button8 = UIButton(frame: CGRectMake(10 + (width / 2), (buttonHeight * 3) + 98, buttonWidth, buttonHeight));
-            button8.backgroundColor = UIColor.orangeColor();
+            button8.backgroundColor = UIColor.blackColor();
             button8.setTitle(title8 + ": " + String(button8Count), forState: UIControlState.Normal)
             button8.addTarget(self, action: "pressed8:", forControlEvents: UIControlEvents.TouchUpInside)
             button8.tag = 28;
@@ -268,7 +268,7 @@ class SemenCounterViewController: UIViewController {
     func pressed4(sender: UIButton!) {
         button4Count++;
         totalCount++;
-        button3.setTitle(title4 + ": " + String(button3Count), forState: UIControlState.Normal)
+        button4.setTitle(title4 + ": " + String(button4Count), forState: UIControlState.Normal)
         self.title = "Total Count: " + String(totalCount);
     }
     

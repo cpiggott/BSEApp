@@ -51,7 +51,7 @@ class NewGroupViewController: UIViewController, UITextFieldDelegate {
         
         ranchInfo["ranchName"] = ranchName.text;
         ranchInfo["firstName"] = firstName.text;
-        ranchInfo["lastName"] = lastName.text;
+        ranchInfo["email"] = lastName.text;
         ranchInfo["address1"] = address1.text;
         ranchInfo["address2"] = address2.text;
         ranchInfo["city"] = city.text;

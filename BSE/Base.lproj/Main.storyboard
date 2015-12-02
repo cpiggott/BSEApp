@@ -780,13 +780,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXx-Zp-3ad" customClass="JVFloatLabeledTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rancher Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXx-Zp-3ad" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="20" y="127" width="560" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4kz-Im-wMq" customClass="JVFloatLabeledTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4kz-Im-wMq" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="20" y="177" width="560" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1351,32 +1351,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Breeding Season Used" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vST-8H-Qdt" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="20" y="74" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Breeding Season Used" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vST-8H-Qdt" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="20" y="74" width="560" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Performance Last Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2i-og-Bll" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="20" y="114" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Performance Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OT-mg-HWl" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="20" y="194.5" width="560" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Performance Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OT-mg-HWl" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="20" y="154" width="560" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bull Performance Last Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWz-Zd-2hD">
+                                <rect key="frame" x="20" y="126" width="560" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Other Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCS-3E-7V0" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="20" y="246.5" width="560" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Other Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCS-3E-7V0" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="20" y="194" width="560" height="30"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="rNZ-L7-Jbd">
+                                <rect key="frame" x="20" y="156.5" width="560" height="29"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="1mq-4a-nAA">
-                                <rect key="frame" x="20" y="234" width="560" height="29"/>
+                                <segments>
+                                    <segment title="Good"/>
+                                    <segment title="Poor"/>
+                                    <segment title="Unkown"/>
+                                    <segment title="Other"/>
+                                </segments>
+                                <connections>
+                                    <action selector="performanceChanged:" destination="30g-bz-h3N" eventType="valueChanged" id="ALR-GM-RED"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="1mq-4a-nAA">
+                                <rect key="frame" x="20" y="298.5" width="560" height="29"/>
                                 <animations/>
                                 <segments>
                                     <segment title="Single-Sire"/>
@@ -1390,26 +1404,29 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1mq-4a-nAA" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="3vA-UY-kvg"/>
-                            <constraint firstItem="PCS-3E-7V0" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="4xm-hp-t1n"/>
-                            <constraint firstItem="2OT-mg-HWl" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="GEy-xP-8Kg"/>
-                            <constraint firstItem="1mq-4a-nAA" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="Iym-Uq-rfB"/>
-                            <constraint firstItem="PCS-3E-7V0" firstAttribute="top" secondItem="2OT-mg-HWl" secondAttribute="bottom" constant="10" id="L17-jd-zw5"/>
-                            <constraint firstItem="vST-8H-Qdt" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="LOV-W1-qP9"/>
-                            <constraint firstItem="1mq-4a-nAA" firstAttribute="top" secondItem="PCS-3E-7V0" secondAttribute="bottom" constant="10" id="LfS-c1-f2c"/>
-                            <constraint firstItem="H2i-og-Bll" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="Lg9-tg-Whe"/>
-                            <constraint firstItem="2OT-mg-HWl" firstAttribute="top" secondItem="H2i-og-Bll" secondAttribute="bottom" constant="10" id="Ndx-Vi-73D"/>
-                            <constraint firstItem="2OT-mg-HWl" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="SxS-oi-nL2"/>
-                            <constraint firstItem="H2i-og-Bll" firstAttribute="top" secondItem="vST-8H-Qdt" secondAttribute="bottom" constant="10" id="XBi-du-bEi"/>
-                            <constraint firstItem="vST-8H-Qdt" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="Y7A-YS-pVV"/>
-                            <constraint firstItem="PCS-3E-7V0" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="cAu-lS-SRO"/>
-                            <constraint firstItem="vST-8H-Qdt" firstAttribute="top" secondItem="wuc-bf-TOx" secondAttribute="bottom" constant="10" id="d9Y-QM-hIy"/>
-                            <constraint firstItem="H2i-og-Bll" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="x7K-eX-Taf"/>
+                            <constraint firstItem="vST-8H-Qdt" firstAttribute="top" secondItem="wuc-bf-TOx" secondAttribute="bottom" constant="10" id="Aop-SP-meD"/>
+                            <constraint firstItem="2OT-mg-HWl" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="FN8-Bx-Tyg"/>
+                            <constraint firstItem="rWz-Zd-2hD" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="P6F-fZ-xfr"/>
+                            <constraint firstItem="vST-8H-Qdt" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="Pfa-gJ-UiM"/>
+                            <constraint firstItem="rNZ-L7-Jbd" firstAttribute="top" secondItem="rWz-Zd-2hD" secondAttribute="bottom" constant="10" id="WyI-EK-iHs"/>
+                            <constraint firstItem="2OT-mg-HWl" firstAttribute="top" secondItem="rNZ-L7-Jbd" secondAttribute="bottom" constant="10" id="XWG-F8-6Ov"/>
+                            <constraint firstItem="PCS-3E-7V0" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="g3e-xZ-VB9"/>
+                            <constraint firstItem="rWz-Zd-2hD" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="iUE-fg-xKt"/>
+                            <constraint firstItem="1mq-4a-nAA" firstAttribute="top" secondItem="PCS-3E-7V0" secondAttribute="bottom" constant="10" id="k6k-DN-UFS"/>
+                            <constraint firstItem="1mq-4a-nAA" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="kFI-aT-ZLE"/>
+                            <constraint firstItem="PCS-3E-7V0" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="kNd-K4-uSy"/>
+                            <constraint firstItem="vST-8H-Qdt" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="oAK-SY-dLN"/>
+                            <constraint firstItem="rNZ-L7-Jbd" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="p6e-5i-G9h"/>
+                            <constraint firstItem="1mq-4a-nAA" firstAttribute="leading" secondItem="SMd-3b-abf" secondAttribute="leadingMargin" id="pDF-e4-dOE"/>
+                            <constraint firstItem="rNZ-L7-Jbd" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="pID-LY-D5Q"/>
+                            <constraint firstItem="2OT-mg-HWl" firstAttribute="trailing" secondItem="SMd-3b-abf" secondAttribute="trailingMargin" id="pya-4E-gKR"/>
+                            <constraint firstItem="rWz-Zd-2hD" firstAttribute="top" secondItem="vST-8H-Qdt" secondAttribute="bottom" constant="10" id="qMn-Cy-wf8"/>
+                            <constraint firstItem="PCS-3E-7V0" firstAttribute="top" secondItem="2OT-mg-HWl" secondAttribute="bottom" constant="10" id="sdV-Ol-nzp"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="descriptionField" destination="2OT-mg-HWl" id="oXN-5U-FeZ"/>
-                        <outlet property="lastSeasonField" destination="H2i-og-Bll" id="Fyt-c7-WSF"/>
+                        <outlet property="lastYearPerformance" destination="rNZ-L7-Jbd" id="JGH-u0-eWP"/>
                         <outlet property="otherComments" destination="PCS-3E-7V0" id="0yd-FE-p0Q"/>
                         <outlet property="seasonUsedField" destination="vST-8H-Qdt" id="RUX-Dx-0zf"/>
                         <outlet property="singleMuti" destination="1mq-4a-nAA" id="38V-9y-9tK"/>

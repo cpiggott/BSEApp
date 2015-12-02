@@ -17,10 +17,10 @@ class BullMatingViewController: UIViewController {
     
     
     @IBOutlet var seasonUsedField: UITextField!
-    @IBOutlet var lastSeasonField: UITextField!
     @IBOutlet var descriptionField: UITextField!
     @IBOutlet var otherComments: UITextField!
     @IBOutlet var singleMuti: UISegmentedControl!
+    @IBOutlet var lastYearPerformance: UISegmentedControl!
     
     
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class BullMatingViewController: UIViewController {
         self.title = "Mating Info";
         
         seasonUsedField.text = bull["seasonsUsed"] as? String;
-        lastSeasonField.text = bull["lastSeasonPerformance"] as? String;
+        //lastSeasonField.text = bull["lastSeasonPerformance"] as? String;
         descriptionField.text = bull["matingDescription"] as? String;
         otherComments.text = bull["matingComments"] as? String;
         
@@ -42,6 +42,23 @@ class BullMatingViewController: UIViewController {
             }
             else if (singleMultiString == "Multi-Sire"){
                 singleMuti.selectedSegmentIndex = 1;
+            }
+            
+        }
+        
+        if(bull["lastSeasonPerformance"] != nil){
+            let matingPerformance = bull["lastSeasonPerformance"] as! String;
+            if(matingPerformance == "Good"){
+                lastYearPerformance.selectedSegmentIndex = 0;
+            }
+            else if(matingPerformance == "Poor"){
+                lastYearPerformance.selectedSegmentIndex = 1;
+            }
+            else if(matingPerformance == "Unknown"){
+                lastYearPerformance.selectedSegmentIndex = 2;
+            }
+            else if(matingPerformance == "Other"){
+                lastYearPerformance.selectedSegmentIndex = 3;
             }
             
         }
@@ -63,9 +80,6 @@ class BullMatingViewController: UIViewController {
             bull["seasonsUsed"] = seasonUsedField.text;
         }
         
-        if(lastSeasonField.text != nil){
-            bull["lastSeasonPerformance"] = lastSeasonField.text;
-        }
         
         if(descriptionField.text != nil){
             bull["matingDescription"] = descriptionField.text;
@@ -86,15 +100,31 @@ class BullMatingViewController: UIViewController {
         switch singleMuti.selectedSegmentIndex
         {
         case 0:
-            bull["singleOrMultiSire"] = "Single-Sire";
+            bull["lastSeasonPerformance"] = "Good";
         case 1:
-            bull["singleOrMultiSire"] = "Multi-Sire";
+            bull["lastSeasonPerformance"] = "Bad";
+        case 2:
+            bull["lastSeasonPerformance"] = "Unknown";
+        case 3:
+            bull["lastSeasonPerformance"] = "Other";
         default:
             break;
         }
         
     }
 
+    @IBAction func performanceChanged(sender: AnyObject) {
+        
+        switch lastYearPerformance.selectedSegmentIndex
+        {
+        case 0:
+            bull["singleOrMultiSire"] = "Single-Sire";
+        case 1:
+            bull["singleOrMultiSire"] = "Multi-Sire";
+        default:
+            break;
+        }
+    }
     /*
     // MARK: - Navigation
 
